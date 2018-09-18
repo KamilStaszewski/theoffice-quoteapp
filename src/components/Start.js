@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom';
 export class Start extends Component {
   render() {
     return (
-      <div>
-        Start
-        <Link to='/QuoteApp' className="link">Link</Link>
+      <div className="landingpage">
+        <Link to='/QuoteApp' className="link">Guess who said that The Office quote</Link>
       </div>
     )
   }
