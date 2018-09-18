@@ -10,7 +10,7 @@ export default class QuoteApp extends Component {
     this.state = {
        index: Math.floor(Math.random() * data.length),
        isCorrect: null,
-       gifarr: [1, 2],
+       gifarr: ['http://blog.colourfulrebel.com/files/2016/08/giphy2.gif', 'https://www.cvonline.hu/blog/wp-content/uploads/2017/04/cvonline_2.gif'],
        random: 0
     }
   }
@@ -47,11 +47,11 @@ export default class QuoteApp extends Component {
         <div className="QuoteApp-window">
           <div className="QuoteApp-image">
           {isCorrect !== null && isCorrect && 
-              <img src="http://blog.colourfulrebel.com/files/2016/08/giphy2.gif"
+              <img src={this.state.random}
                    className="QuoteApp-wrongimg"
                     alt="no"></img>}
           {isCorrect !== null && !isCorrect && 
-            <img src="https://www.cvonline.hu/blog/wp-content/uploads/2017/04/cvonline_2.gif"
+            <img src={this.state.random}
                  className="QuoteApp-wrongimg"
                  alt="no"></img>}
           </div>
