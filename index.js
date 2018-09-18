@@ -10,7 +10,7 @@ import {
 
 const App = () => (
     <HashRouter>
-      <div>
+      <div className="App">
         <Route exact path='/' component={Start} />
         <Route path='/QuoteApp' component={QuoteApp} />
       </div>

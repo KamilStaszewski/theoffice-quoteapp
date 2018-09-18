@@ -1,8 +1,48 @@
-.RandomWalkerContainer {
-    height: 600px;
-    width: 800px;
-    background: #000;
+.App {
+    height: 100%;
+    width: 100%;
+}
+
+.QuoteApp {
+    height: 100%;
+    width: 100%;
+    background: #DAE3E5;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.QuoteApp-window {
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 10px;
+}
+
+.QuoteApp-quote {
+    height: 100%;
+    width: 50%;
+    background: #507DBC;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    
+}
+
+.QuoteApp-image {
+    height: 100%;
+    width: 50%;
+    background: #04080F;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.QuoteApp-wrongimg {
+    height: 100%;
+    width: 100%;
 }
 
 .hide {
