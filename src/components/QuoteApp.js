@@ -8,14 +8,14 @@ export default class QuoteApp extends Component {
     super(props)
   
     this.state = {
-       index: 0,
+       index: Math.floor(Math.random() * data.length),
        isCorrect: null
     }
   }
 
   confirmAnswer = () => {
       this.setState({
-          index: this.state.index + 1,
+          index: Math.floor(Math.random() * data.length),
           isCorrect: null
       })
   }
@@ -38,6 +38,7 @@ export default class QuoteApp extends Component {
       if (isCorrect == true || isCorrect == false) {
         button = <button onClick={this.confirmAnswer}>Confirm</button>
       } 
+      console.log(index, data.length)
     return (
       <div className="QuoteApp">
          {isCorrect === null ? <div className="Quote">
@@ -50,7 +51,6 @@ export default class QuoteApp extends Component {
         <h1>you're right</h1>}
         {isCorrect !== null && !isCorrect && 
         <h1>you're wrong</h1>}
-        
         {button}
       </div>
     )

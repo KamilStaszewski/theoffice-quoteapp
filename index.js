@@ -1,10 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import QuoteApp from './src/components/QuoteApp';
-import './index.scss'
+import Start from './src/components/Start';
+import './index.scss';
+import {
+  HashRouter,
+  Route,
+  } from 'react-router-dom';
 
 const App = () => (
-    <QuoteApp />
+    <HashRouter>
+      <div>
+        <Route exact path='/' component={Start} />
+        <Route path='/QuoteApp' component={QuoteApp} />
+      </div>
+    </HashRouter>
 );
 
 ReactDOM.render(<App />, document.getElementById('root'));
