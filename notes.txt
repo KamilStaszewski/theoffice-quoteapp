@@ -1,0 +1,57 @@
+I'm trying not to render part of my code. I want to render it only when answer is correct/not correct. At the beginning only question and answers should be displayed. React renders false argument "you are wrong". State is set to null. I checked and null doesnt equal false nor true. Why does it renders anything? How to not render anything until user chooses wrong/correct answer? Code:
+
+    export default class QuoteApp extends Component {
+      constructor(props) {
+        super(props)
+    
+        this.state = {
+           index: 0,
+           isCorrect: null
+        }
+      }
+    
+      confirmAnswer = () => {
+          this.setState({
+              index: this.state.index + 1
+          })
+      }
+    
+      handleClick = (e, index) => {
+        if (e.target.textContent === data[index].name) {
+          this.setState({
+            isCorrect: true
+          }) 
+          } else {
+            this.setState({
+              isCorrect: false
+            })
+        }
+      }
+    
+      render() {
+          const { index, isCorrect } = this.state
+          console.log(this.state)
+        return (
+          <div className="QuoteApp">
+            <div className={ (this.state.isCorrect ? 'hide' : '') }>
+              <Quote index={index}/>
+              <Answers index={index}
+                     handleClick={this.handleClick}
+                     />
+            </div>
+            {isCorrect ?
+            <h1>you're right</h1>
+            :
+            <h1>you're wrong</h1>}
+            <button onClick={this.confirmAnswer}>Confirm</button>
+          </div>
+        )
+      }
+    }
+
+I want
+
+you're right
+:
+you're wrong
+to be gone till user interaction
