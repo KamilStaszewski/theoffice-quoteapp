@@ -1,0 +1,20 @@
+.landingpage {
+    height: 100%;
+    width: 100%;
+    background: url(https://www.hdwallpaper.nu/wp-content/uploads/2018/03/the_office_us-13.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    font-size: 35px;
+}

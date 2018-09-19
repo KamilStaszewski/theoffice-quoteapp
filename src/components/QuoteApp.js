@@ -48,11 +48,11 @@ export default class QuoteApp extends Component {
           <div className="QuoteApp-image">
           {isCorrect !== null && isCorrect && 
               <img src={this.state.random}
-                   className="QuoteApp-wrongimg"
+                   className="QuoteApp-img"
                     alt="no"></img>}
           {isCorrect !== null && !isCorrect && 
             <img src={this.state.random}
-                 className="QuoteApp-wrongimg"
+                 className="QuoteApp-img"
                  alt="no"></img>}
           </div>
           <div className="QuoteApp-quote">
