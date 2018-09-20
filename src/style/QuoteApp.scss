@@ -6,7 +6,7 @@
 .QuoteApp {
     height: 100%;
     width: 100%;
-    background: #DAE3E5;
+    background: #000;
     position: relative;
     display: flex;
     justify-content: center;
@@ -24,7 +24,7 @@
 .QuoteApp-quote {
     height: 100%;
     width: 50%;
-    background: #507DBC;
+    background: #fff;
     border-radius: 10px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -33,11 +33,13 @@
 
 .QuoteApp-image {
     height: 100%;
-    width: 50%;
-    background: #04080F;
+    width: 100%;
+    background: none;
     border-radius: 10px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    background: url(https://ih1.redbubble.net/image.311592153.5959/ap,550x550,16x12,1,transparent,t.u6.png);
+    background-size: cover;
 }
 
 .QuoteApp-img {
