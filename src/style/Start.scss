@@ -1,7 +1,7 @@
 .landingpage {
     height: 100%;
     width: 100%;
-    background: url(https://www.hdwallpaper.nu/wp-content/uploads/2018/03/the_office_us-13.jpg);
+    background: url("../../the office.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -10,11 +10,19 @@
 }
 
 .buttonContainer {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    button {
+        color: #000;
+        padding: 10px;
+        font-size: 30px;
+    }
 }
 
 .link {
     font-size: 35px;
+    padding-bottom: 130px;
 }

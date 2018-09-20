@@ -8,8 +8,7 @@ export class Start extends Component {
     return (
         <div className="landingpage">
           <div className="buttonContainer">
-            <h1>Welcome back, jerky jerk-face</h1>
-            <Link to='/QuoteApp' className="link"><Button variant="primary">Play the game</Button></Link>
+            <Link to='/QuoteApp' className="link"><Button variant="light">Play the game</Button></Link>
           </div>
         </div>
     )
